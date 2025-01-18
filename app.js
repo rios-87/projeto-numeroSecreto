@@ -7,13 +7,13 @@ let tentativas = 1 ;
 function exibirTexto (tag,texto) {
     let campo = document.querySelector (tag);
     campo.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Female',{rate:1.2}); //Comando para poder a pagina narrar o texto.
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female',{rate:1.2}); //Comando para a pagina poder narrar o texto.
 }
 
 //função para poder exibiir os textos.
 function exibirMensagemInicial(){
     exibirTexto('h1','Jogo do número secreto!');
-    exibirTexto('p','Escolha um número entre 1 e 100.');
+    exibirTexto('p','Escolha um número entre 1 e ' + numeroLimite);
 }
 exibirMensagemInicial();
 
